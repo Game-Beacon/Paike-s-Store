@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SoungVakue : MonoBehaviour
 {
-    AudioSource Audio;
+    public AudioSource Audio;
     public string Name;
     public float TargetTime;
     float Target;
@@ -47,6 +47,14 @@ public class SoungVakue : MonoBehaviour
     }
     public void Change()
     {
-        Audio.volume = PlayerPrefs.GetFloat(Name);
+        try
+        {
+            Audio.volume = PlayerPrefs.GetFloat(Name);
+        }
+        catch
+        {
+            Debug.Log(this.gameObject.name);
+            Debug.Log(Audio.volume);
+        }
     }
 }

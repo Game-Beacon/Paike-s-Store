@@ -29,6 +29,10 @@ public class ShotCutInGame : MonoBehaviour
                 return;
             }
         }
+        if(Optionpanel.activeInHierarchy){
+            Pause(2);
+            return;
+        }
         Pause(1);
     }
     public void Pause(int a)
