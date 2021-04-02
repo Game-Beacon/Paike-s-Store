@@ -64,6 +64,8 @@ public class Move : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUp
                 {
                     this.transform.position = A;
                     this.transform.eulerAngles = B;
+                    G.Item.Add(Num);
+                    Inbag = true;
                     C.Play();
                     foreach (var k in Blocks)
                     {
@@ -112,6 +114,8 @@ public class Move : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUp
                     this.transform.position = A;
                     this.transform.eulerAngles = B;
                     C.Play();
+                    Inbag = true;
+                    G.Item.Add(Num);
                     foreach (var k in Blocks)
                     {
                         k.GetComponent<Image>().color = new Color(0, 1, 0, 50 / 255f);

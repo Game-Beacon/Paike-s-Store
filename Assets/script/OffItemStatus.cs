@@ -5,15 +5,20 @@ using UnityEngine;
 public class OffItemStatus : MonoBehaviour
 {
     ShowItemStatus A;
-    private void Start() {
+    private void Start()
+    {
         A = GetComponent<ShowItemStatus>();
     }
     void Update()
     {
-        if(Input.GetMouseButton(0)){
-            A.Panel.SetActive(false);
+        if (Input.GetMouseButton(0))
+        {
+            A.Off();
 
-            this.enabled = false;
+        }
+        if (Input.GetAxis("Mouse ScrollWheel") != 0)
+        {
+            A.Off();
         }
     }
 }

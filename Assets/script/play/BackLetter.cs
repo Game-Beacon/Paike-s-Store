@@ -12,12 +12,16 @@ public class BackLetter : MonoBehaviour
     public BlackMokuOver Black;
     public GameObject Panel;
     public GameObject Board;
+    List<string> item = new List<string>();
+    public Text B;
     void Awake()
     {
         A = GetComponent<GManager>();
         texts = A.BackLetter();
+        item = A.GetUnlockItem();
         Panel.SetActive(true);
         Letter.sprite = texts[a];
+        B.text = "解鎖物品: " + item[a];
         for (int i = 0; i < A.day; i++)
         {
             for (int j = 0; j < A.Lev[i].Characters.Count; j++)
@@ -54,6 +58,7 @@ public class BackLetter : MonoBehaviour
         else
         {
             Letter.sprite = texts[a];
+            B.text = "解鎖物品: " + item[a];
         }
     }
 }

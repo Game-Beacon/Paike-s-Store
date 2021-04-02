@@ -273,6 +273,16 @@ public class People
         // a = x1 + "\n" + x2 + "\n\n\n解鎖 : " + x3 + "\n" + x4;
         return Letters[PlayerPrefs.GetInt("day" + day + "count" + count)].Text;
     }
+
+    public string GetUnlockItem(int day, int count)
+    {
+        string x3 = "";
+        foreach (var i in Letters[PlayerPrefs.GetInt("day" + day + "count" + count)].UnlockItem)
+        {
+            x3 += " [" + i.name + "]";
+        }
+        return x3;
+    }
 }
 [Serializable]
 public class Levels

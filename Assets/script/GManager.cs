@@ -166,6 +166,15 @@ public class GManager : MonoBehaviour
         }
         return a;
     }
+    public List<string> GetUnlockItem()
+    {
+        List<string> a = new List<string>();
+        for (int i = 0; i < Lev[day - 1].Characters.Count; i++)
+        {
+            a.Add(Lev[day - 1].Characters[i].GetUnlockItem(day - 1, i));
+        }
+        return a;
+    }
 
 }
 
