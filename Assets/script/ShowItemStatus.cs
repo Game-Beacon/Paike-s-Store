@@ -15,14 +15,18 @@ public class ShowItemStatus : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     {
         A = GetComponent<OffItemStatus>();
         Now = Panel.transform.parent;
-        B = Panel.transform.position - this.transform.position;
+        //B = Panel.transform.position - this.transform.position;
+        B = new Vector3(120, -160, 0);
     }
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Panel.transform.position = B + this.transform.position;
-        Panel.SetActive(true);
-        Panel.transform.parent = Show;
-        A.enabled = true;
+        if (!Input.GetMouseButton(0) && !Input.GetMouseButton(1))
+        {
+            Panel.transform.position = B + this.transform.position;
+            Panel.SetActive(true);
+            Panel.transform.parent = Show;
+            A.enabled = true;
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData)

@@ -12,6 +12,7 @@ public class BackLetter : MonoBehaviour
     public BlackMokuOver Black;
     public GameObject Panel;
     public GameObject Board;
+    public GameObject Over;
     List<string> item = new List<string>();
     public Text B;
     void Awake()
@@ -51,7 +52,15 @@ public class BackLetter : MonoBehaviour
         if (a >= texts.Count)
         {
 
-            Board.SetActive(true);
+
+            if (PlayerPrefs.GetInt("day") == 4)
+            {
+                Over.SetActive(true);
+            }
+            else
+            {
+                Board.SetActive(true);
+            }
             Panel.SetActive(false);
             Destroy(this);
         }
