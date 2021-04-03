@@ -3582,8 +3582,8 @@ RectTransform:
   - {fileID: 840370716}
   - {fileID: 1372641469}
   - {fileID: 863151704}
-  - {fileID: 746738131}
   - {fileID: 2070039366}
+  - {fileID: 746738131}
   - {fileID: 44991803}
   - {fileID: 1662916974}
   - {fileID: 2066446502}
@@ -13834,7 +13834,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &746738131
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13847,7 +13847,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 212320015}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -25519,7 +25519,6 @@ GameObject:
   - component: {fileID: 1414671515}
   - component: {fileID: 1414671514}
   - component: {fileID: 1414671492}
-  - component: {fileID: 1414671527}
   - component: {fileID: 1414671537}
   - component: {fileID: 1414671536}
   - component: {fileID: 1414671535}
@@ -25595,6 +25594,8 @@ GameObject:
   - component: {fileID: 1414671594}
   - component: {fileID: 1414671597}
   - component: {fileID: 1414671598}
+  - component: {fileID: 1414671527}
+  - component: {fileID: 1414671509}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -25727,7 +25728,7 @@ MonoBehaviour:
   scrollPos: {x: 54.885906, y: -32.46499}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 457
+  blockViewHeight: 280
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -25736,9 +25737,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1414671496}
+  - {fileID: 1414671511}
   selectedCommands:
-  - {fileID: 1414671512}
+  - {fileID: 1414671527}
   variables: []
   description: 
   stepPause: 0
@@ -26732,6 +26733,27 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 0
   targetGameObjectOLD: {fileID: 0}
+--- !u!114 &1414671509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414671460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 185
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 746738130}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1414671510
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -26782,6 +26804,7 @@ MonoBehaviour:
   - {fileID: 1414671510}
   - {fileID: 1414671597}
   - {fileID: 1414671508}
+  - {fileID: 1414671509}
   - {fileID: 1414671527}
   - {fileID: 1414671507}
   - {fileID: 1414671532}
@@ -27168,7 +27191,7 @@ MonoBehaviour:
   suppressAllAutoSelections: 0
 --- !u!114 &1414671527
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -27178,7 +27201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 77
+  itemId: 184
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
@@ -39431,7 +39454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2070039364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39481,7 +39504,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 212320015}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
