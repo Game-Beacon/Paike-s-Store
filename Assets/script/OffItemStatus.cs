@@ -20,5 +20,9 @@ public class OffItemStatus : MonoBehaviour
         {
             A.Off();
         }
+        if (A.exit == 0 && A.S.a == 0)
+        {
+            A.Off();
+        }
     }
 }

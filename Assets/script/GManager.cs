@@ -86,6 +86,7 @@ public class GManager : MonoBehaviour
     {
         AA.enabled = true;
         day++;
+        PlayerPrefs.SetInt("see", 1);
         PlayerPrefs.SetInt("day", day);
         AAA.namee = "Game";
         AAA.UseSlid = true;

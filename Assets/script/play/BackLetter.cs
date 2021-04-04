@@ -17,6 +17,7 @@ public class BackLetter : MonoBehaviour
     public Text B;
     void Awake()
     {
+
         A = GetComponent<GManager>();
         texts = A.BackLetter();
         item = A.GetUnlockItem();
@@ -38,6 +39,22 @@ public class BackLetter : MonoBehaviour
             }
         }
         Black.enabled = true;
+        if (PlayerPrefs.GetInt("see") == 0)
+        {
+            if (PlayerPrefs.GetInt("day") == 4)
+            {
+                Over.SetActive(true);
+            }
+            else
+            {
+                Board.SetActive(true);
+            }
+            Panel.SetActive(false);
+            Destroy(this);
+        }else{
+            PlayerPrefs.SetInt("see", 0);
+        }
+
     }
     private void Update()
     {

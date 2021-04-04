@@ -31,6 +31,7 @@ public class GameStartMenu : MonoBehaviour
         A.enabled = true;
         PlayerPrefs.SetInt("day", 0);
         Black.namee = "Tutoral 1";
+        PlayerPrefs.SetInt("see", 1);
         Black.UseSlid = true;
         Black.gameObject.SetActive(true);
         Black.enabled = true;
