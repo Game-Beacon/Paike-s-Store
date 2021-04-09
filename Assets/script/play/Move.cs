@@ -82,67 +82,120 @@ public class Move : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUp
                 Destroy(this.gameObject);
                 return;
             }
-            int a = 0;
-            for (int i = 0; i < Blocks.Count; i++)
+            if (G.Now.Pan == 1)
             {
-                for (int j = 0; j < G.Now.Panels.Count; j++)
+                int a = 0;
+                for (int i = 0; i < Blocks.Count; i++)
                 {
-                    if (G.Now.Panels[j].GetComponent<PanelStatus>().Used)
+                    for (int j = 0; j < G.Now.Panels.Count; j++)
                     {
-                        continue;
+                        if (G.Now.Panels[j].GetComponent<PanelStatus>().Used)
+                        {
+                            continue;
+                        }
+                        if (Vector2.Distance(G.Now.Panels[j].transform.position, Blocks[i].transform.position) <= zai)
+                        {
+                            a++;
+                            Used.Add(G.Now.Panels[j]);
+                            break;
+                        }
                     }
-                    if (Vector2.Distance(G.Now.Panels[j].transform.position, Blocks[i].transform.position) <= zai)
+                    if (a != i + 1)
                     {
-                        a++;
-                        Used.Add(G.Now.Panels[j]);
-                        break;
-                    }
-                }
-                if (a != i + 1)
-                {
-                    Used.Clear();
-                    //  if (NPCsItem)
-                    //  {
-                    if (A.x < Pos2.position.x
-                        && A.x > Pos1.position.x
-                        && A.y > Pos2.position.y
-                        && A.y < Pos1.position.y)
-                    {
-                        Destroy(this.gameObject);
+                        Used.Clear();
+                        //  if (NPCsItem)
+                        //  {
+                        if (A.x < Pos2.position.x
+                            && A.x > Pos1.position.x
+                            && A.y > Pos2.position.y
+                            && A.y < Pos1.position.y)
+                        {
+                            Destroy(this.gameObject);
+                            return;
+                        }
+                        this.transform.position = A;
+                        this.transform.eulerAngles = B;
+                        C.Play();
+                        Inbag = true;
+                        G.Item.Add(Num);
+                        foreach (var k in Blocks)
+                        {
+                            k.GetComponent<Image>().color = new Color(0, 1, 0, 50 / 255f);
+                        }
+                        foreach (var k in Back)
+                        {
+                            k.GetComponent<PanelStatus>().Used = true;
+                        }
+                        Used.Clear();
+                        Used.AddRange(Back);
+                        Back.Clear();
+
+                        // }
                         return;
                     }
-                    this.transform.position = A;
-                    this.transform.eulerAngles = B;
-                    C.Play();
-                    Inbag = true;
-                    G.Item.Add(Num);
-                    foreach (var k in Blocks)
-                    {
-                        k.GetComponent<Image>().color = new Color(0, 1, 0, 50 / 255f);
-                    }
-                    foreach (var k in Back)
-                    {
-                        k.GetComponent<PanelStatus>().Used = true;
-                    }
-                    Used.Clear();
-                    Used.AddRange(Back);
-                    Back.Clear();
-
-                    // }
-                    return;
+                }
+                transform.position = Used[0].transform.position + transform.position - Blocks[0].transform.position;
+                C.Play();
+                foreach (var i in Blocks)
+                {
+                    i.GetComponent<Image>().color = new Color(0, 1, 0, 50 / 255f);
+                }
+                Inbag = true;
+                G.Item.Add(Num);
+                foreach (var i in Used)
+                {
+                    i.GetComponent<PanelStatus>().Used = true;
                 }
             }
-            transform.position = Used[0].transform.position + transform.position - Blocks[0].transform.position;
-            C.Play();
-            foreach (var i in Blocks)
+            else
             {
-                i.GetComponent<Image>().color = new Color(0, 1, 0, 50 / 255f);
-            }
-            Inbag = true;
-            G.Item.Add(Num);
-            foreach (var i in Used)
-            {
-                i.GetComponent<PanelStatus>().Used = true;
+                for (int i = 0; i < G.Now.Panels2.Count; i++)
+                {
+                    if (Vector3.Distance(G.Now.Panels2[i].transform.position, this.transform.position) <= 100 && !G.Now.Panels2[i].GetComponent<PanelStatus>().Used)
+                    {
+                        G.Now.Panels2[i].GetComponent<PanelStatus>().Used = true;
+                        this.transform.position = G.Now.Panels2[i].transform.position;
+                        Used.Add(G.Now.Panels2[i]);
+                        C.Play();
+                        foreach (var j in Blocks)
+                        {
+                            j.GetComponent<Image>().color = new Color(0, 1, 0, 50 / 255f);
+                        }
+                        Inbag = true;
+                        G.Item.Add(Num);
+                        return;
+                    }
+                }
+                Used.Clear();
+                //  if (NPCsItem)
+                //  {
+                if (A.x < Pos2.position.x
+                    && A.x > Pos1.position.x
+                    && A.y > Pos2.position.y
+                    && A.y < Pos1.position.y)
+                {
+                    Destroy(this.gameObject);
+                    return;
+                }
+                this.transform.position = A;
+                this.transform.eulerAngles = B;
+                C.Play();
+                Inbag = true;
+                G.Item.Add(Num);
+                foreach (var k in Blocks)
+                {
+                    k.GetComponent<Image>().color = new Color(0, 1, 0, 50 / 255f);
+                }
+                foreach (var k in Back)
+                {
+                    k.GetComponent<PanelStatus>().Used = true;
+                }
+                Used.Clear();
+                Used.AddRange(Back);
+                Back.Clear();
+
+                // }
+                return;
             }
         }
     }
@@ -207,7 +260,14 @@ public class Move : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUp
                 BACKSUP.GetComponent<Move>().ResetColor();
                 ifres = false;
             }
-            transform.SetParent(G.Now.Used.transform);
+            if (G.Now.Pan == 1)
+            {
+                transform.SetParent(G.Now.Used.transform);
+            }
+            else
+            {
+                transform.SetParent(G.Now.Used2.transform);
+            }
             transform.SetAsLastSibling();
             if (Inbag)
             {

@@ -15,6 +15,7 @@ using System;
         1005 - 鏟子
         1006 - 十字鎬
         1007 - 琴
+        1008 - 箭筒
     }
 heal{            
         2001 - 水
@@ -61,6 +62,7 @@ support{
 [Serializable]
 public class People
 {
+    public int Pan = 1;
     public GameObject Chara;
     public string Class;
     public string Name;
@@ -71,12 +73,16 @@ public class People
     public List<int> SpecialNeed = new List<int>();
     public List<int> Darahgui = new List<int>();
     public GameObject Used;
+    public GameObject Used2;
     public bool IsFailed;
     public GameObject Table;
+    public GameObject TPan1;
+    public GameObject TPan2;
     public string timeouttxt;
     public int SpecialCode; // 1 - todorhoi ed zuiltei baih, 2 - Hooson zai, 3 - hool deeree baih
     public int TargetHoosonZai;
     public List<GameObject> Panels = new List<GameObject>();
+    public List<GameObject> Panels2 = new List<GameObject>();
     public Letter[] Letters = new Letter[2];
     public void Have(List<int> A)
     {

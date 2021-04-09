@@ -9,7 +9,6 @@ public class ShowItemStatus : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     OffItemStatus A;
     public Transform Show;
     public Transform Now;
-    Vector3 B;
     public int exit = 0;
     [ContextMenu("A")]
     public void ABCD()
@@ -29,15 +28,12 @@ public class ShowItemStatus : MonoBehaviour, IPointerEnterHandler, IPointerExitH
         A = GetComponent<OffItemStatus>();
         S = Panel.GetComponent<Statuspanel>();
         Now = Panel.transform.parent;
-        //B = Panel.transform.position - this.transform.position;
-        B = new Vector3(120, -160, 0);
     }
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (!Input.GetMouseButton(0) && !Input.GetMouseButton(1))
         {
             exit = 1;
-            Panel.transform.position = B + this.transform.position;
             Panel.SetActive(true);
             Panel.transform.parent = Show;
             A.enabled = true;

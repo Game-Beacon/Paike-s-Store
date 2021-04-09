@@ -6,6 +6,7 @@ public class GameStart : MonoBehaviour
 {
     void Start()
     {
+        Application.targetFrameRate = 60;
         if (!PlayerPrefs.HasKey("anh"))
         {
             PlayerPrefs.SetString("anh", "1");

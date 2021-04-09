@@ -43,6 +43,7 @@ public class GManager : MonoBehaviour
         //     i.SetActive(true);
         // }
     }
+    public Statuspanel[] S;
     public void TimeOver()
     {
         L.Characters[nowchara].IsFailed = true;
@@ -51,8 +52,20 @@ public class GManager : MonoBehaviour
         MainScore[MainScore.Count - 1].Set(0, 0);
         Table.interactable = false;
         Closepanel(Tablepanel);
+        foreach (var i in S)
+        {
+            i.gameObject.SetActive(false);
+            i.a = 0;
+        }
         A.ExecuteBlock(L.Characters[nowchara].timeouttxt);
 
+    }
+
+    public void SwitchPanel(int a)
+    {
+        L.Characters[nowchara].TPan1.SetActive(a == 1 ? true : false);
+        L.Characters[nowchara].TPan2.SetActive(a == 1 ? false : true);
+        L.Characters[nowchara].Pan = a;
     }
     public TimeCount T;
     public void OverBag(GameObject A)
@@ -103,6 +116,9 @@ public class GManager : MonoBehaviour
     public Text Hojigdsonhun;
     public GameObject RestartButn;
     public GameObject NextButn;
+    public Sprite ylsan;
+    public Sprite ylaagui;
+    public Image[] Onoo;
     public void RestoreTable()
     {
         L.Characters[nowchara].Table.SetActive(false);
@@ -112,12 +128,14 @@ public class GManager : MonoBehaviour
             //Over
             OverPanel.SetActive(true);
             int clear = 0;
-            foreach (var i in L.Characters)
+            for (int i = 0; i < L.Characters.Count; i++)
             {
-                if (!i.IsFailed)
+                if (!L.Characters[i].IsFailed)
                 {
                     clear++;
                 }
+                Onoo[i].sprite = L.Characters[i].IsFailed ? ylaagui : ylsan;
+                Onoo[i].color = new Color(1, 1, 1, 1);
             }
             // int golscore = 0;
             // int evscore = 0;
@@ -128,9 +146,9 @@ public class GManager : MonoBehaviour
             // }
 
             //OVER.text = "營業結束" + "\r\n" + "縂客人數: " + L.Characters.Count + "\r\n" + "成功人數: " + clear + "\r\n" + "失敗人數: " + (L.Characters.Count - clear) + "\r\n" + "基礎分數: " + golscore + "\r\n" + "附加分數: " + evscore + "\r\n" + "總分數: " + (golscore + evscore);
-            Niithun.text = L.Characters.Count.ToString();
-            Yvlsanhun.text = clear.ToString();
-            Hojigdsonhun.text = (L.Characters.Count - clear).ToString();
+            //   Niithun.text = L.Characters.Count.ToString();
+            //    Yvlsanhun.text = clear.ToString();
+            //  Hojigdsonhun.text = (L.Characters.Count - clear).ToString();
             if (clear != L.Characters.Count)
             {
                 RestartButn.SetActive(true);
