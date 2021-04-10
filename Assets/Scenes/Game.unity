@@ -3438,6 +3438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &75927202
 GameObject:
   m_ObjectHideFlags: 0
@@ -5207,6 +5208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!114 &137702024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5813,6 +5815,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &169665748
 GameObject:
   m_ObjectHideFlags: 0
@@ -10929,6 +10932,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!114 &272097747 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1223079697082122458, guid: b3e4ebd277dfa1a41ba3d82869c089fa,
@@ -19256,6 +19260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &343469053
 GameObject:
   m_ObjectHideFlags: 0
@@ -23261,6 +23266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &460939113
 GameObject:
   m_ObjectHideFlags: 0
@@ -29327,6 +29333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &609793198
 GameObject:
   m_ObjectHideFlags: 0
@@ -29825,6 +29832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &635838149
 GameObject:
   m_ObjectHideFlags: 0
@@ -30430,6 +30438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &653898671
 GameObject:
   m_ObjectHideFlags: 0
@@ -30669,6 +30678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &663253345
 GameObject:
   m_ObjectHideFlags: 0
@@ -32070,6 +32080,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!114 &712490956 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6209631488087697729, guid: 8e9cec7dcd51b1a45b3b9717cac1234a,
@@ -32246,6 +32257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &714372352
 GameObject:
   m_ObjectHideFlags: 0
@@ -33337,9 +33349,9 @@ RectTransform:
   m_Father: {fileID: 424397326}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 420, y: 340}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 420, y: -275}
   m_SizeDelta: {x: 250, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &744658871
@@ -33743,6 +33755,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &751054622
 GameObject:
   m_ObjectHideFlags: 0
@@ -35013,6 +35026,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &788545302
 GameObject:
   m_ObjectHideFlags: 0
@@ -35653,6 +35667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &805019325
 GameObject:
   m_ObjectHideFlags: 0
@@ -40856,6 +40871,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &929401273
 GameObject:
   m_ObjectHideFlags: 0
@@ -41450,9 +41466,9 @@ RectTransform:
   m_Father: {fileID: 424397326}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 675, y: 340}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 675, y: -275}
   m_SizeDelta: {x: 250, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &951345561
@@ -42487,6 +42503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &975189588
 GameObject:
   m_ObjectHideFlags: 0
@@ -44029,6 +44046,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &1002259116
 GameObject:
   m_ObjectHideFlags: 0
@@ -45806,6 +45824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &1054446379
 GameObject:
   m_ObjectHideFlags: 0
@@ -47033,6 +47052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &1079341992
 GameObject:
   m_ObjectHideFlags: 0
@@ -47937,6 +47957,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &1099885230
 GameObject:
   m_ObjectHideFlags: 0
@@ -48027,6 +48048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &1100012844
 GameObject:
   m_ObjectHideFlags: 0
@@ -54292,6 +54314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &1283890244
 GameObject:
   m_ObjectHideFlags: 0
@@ -55332,6 +55355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &1317906673
 GameObject:
   m_ObjectHideFlags: 0
@@ -56143,6 +56167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &1344230368
 GameObject:
   m_ObjectHideFlags: 0
@@ -57627,6 +57652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &1397780528
 GameObject:
   m_ObjectHideFlags: 0
@@ -57927,6 +57953,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &1404093246
 GameObject:
   m_ObjectHideFlags: 0
@@ -58017,6 +58044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &1404458415
 GameObject:
   m_ObjectHideFlags: 0
@@ -58922,6 +58950,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &1433585168
 GameObject:
   m_ObjectHideFlags: 0
@@ -59012,6 +59041,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &1435322403
 GameObject:
   m_ObjectHideFlags: 0
@@ -59323,6 +59353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!224 &1446141385 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1259885121464141149, guid: c56e81c045e57f34ab3e3ff51d47e6a1,
@@ -61798,6 +61829,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &1528251046
 GameObject:
   m_ObjectHideFlags: 0
@@ -62584,6 +62616,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &1549695793
 GameObject:
   m_ObjectHideFlags: 0
@@ -66442,6 +66475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!114 &1630363375 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5810047709009270365, guid: fd561ae6908f71c469c6e72e4b45a886,
@@ -69350,6 +69384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &1716370238
 GameObject:
   m_ObjectHideFlags: 0
@@ -69852,6 +69887,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &1740069243
 GameObject:
   m_ObjectHideFlags: 0
@@ -72209,9 +72245,9 @@ RectTransform:
   m_Father: {fileID: 424397326}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 155, y: 340}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 155, y: -275}
   m_SizeDelta: {x: 250, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1803238640
@@ -74834,6 +74870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &1866606366
 GameObject:
   m_ObjectHideFlags: 0
@@ -75420,6 +75457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &1877354000
 GameObject:
   m_ObjectHideFlags: 0
@@ -81556,6 +81594,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &2008076091
 GameObject:
   m_ObjectHideFlags: 0
@@ -84814,6 +84853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: 0
   pos: {x: 50, y: -50, z: 0}
+  m: {x: 0, y: 0, z: 0}
 --- !u!1 &2080319561
 GameObject:
   m_ObjectHideFlags: 0

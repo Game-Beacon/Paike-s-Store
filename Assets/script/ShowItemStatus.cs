@@ -22,7 +22,7 @@ public class ShowItemStatus : MonoBehaviour, IPointerEnterHandler, IPointerExitH
             Debug.Log("001");
         }
     }
-   public  Statuspanel S;
+    public Statuspanel S;
     private void Start()
     {
         A = GetComponent<OffItemStatus>();
@@ -34,6 +34,7 @@ public class ShowItemStatus : MonoBehaviour, IPointerEnterHandler, IPointerExitH
         if (!Input.GetMouseButton(0) && !Input.GetMouseButton(1))
         {
             exit = 1;
+            Panel.GetComponent<Statuspanel>().A();
             Panel.SetActive(true);
             Panel.transform.parent = Show;
             A.enabled = true;
