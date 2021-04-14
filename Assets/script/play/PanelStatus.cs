@@ -5,4 +5,5 @@ using UnityEngine;
 public class PanelStatus : MonoBehaviour
 {
     public bool Used = false;
+    public int[] Zaaval;
 }

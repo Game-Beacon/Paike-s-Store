@@ -119,6 +119,7 @@ public class GManager : MonoBehaviour
     public Sprite ylsan;
     public Sprite ylaagui;
     public Image[] Onoo;
+    public Image[] Icon;
     public void RestoreTable()
     {
         L.Characters[nowchara].Table.SetActive(false);
@@ -128,14 +129,16 @@ public class GManager : MonoBehaviour
             //Over
             OverPanel.SetActive(true);
             int clear = 0;
-            for (int i = 0; i < L.Characters.Count; i++)
+            foreach (var i in L.Characters)
             {
-                if (!L.Characters[i].IsFailed)
+                if (!i.IsFailed)
                 {
                     clear++;
                 }
-                Onoo[i].sprite = L.Characters[i].IsFailed ? ylaagui : ylsan;
-                Onoo[i].color = new Color(1, 1, 1, 1);
+                i.Dun.sprite = i.IsFailed ? ylaagui : ylsan;
+                i.Dun.color = new Color(1, 1, 1, 1);
+                i.Tolgoi.sprite = i.Icon;
+                i.Tolgoi.gameObject.SetActive(true);
             }
             // int golscore = 0;
             // int evscore = 0;

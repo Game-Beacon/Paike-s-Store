@@ -16,6 +16,9 @@ using System;
         1006 - 十字鎬
         1007 - 琴
         1008 - 箭筒
+        1009 - 白銀劍
+        1010 - 白銀箭筒
+        1011 - 魔法戒指
     }
 heal{            
         2001 - 水
@@ -34,6 +37,7 @@ heal{
         2014 - 藍藍土司
         2015 - 藍藍餅乾
         2016 - 藍藍麵包
+        2017 - 惡魔眼
     }
 support{
         3001 - 皇冠
@@ -51,6 +55,9 @@ support{
         3013 - 完整的魔王城地圖
         3014 - 指南針
         3015 - 魔法石
+        3016 - 遠古魔法石
+        3017 - 遠古神盾
+        3018 - 戒指
     }
 */
 
@@ -84,6 +91,9 @@ public class People
     public List<GameObject> Panels = new List<GameObject>();
     public List<GameObject> Panels2 = new List<GameObject>();
     public Letter[] Letters = new Letter[2];
+    public Sprite Icon;
+    public Image Tolgoi;
+    public Image Dun;
     public void Have(List<int> A)
     {
         foreach (var i in HaveItem)

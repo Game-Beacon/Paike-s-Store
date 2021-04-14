@@ -153,49 +153,58 @@ public class Move : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUp
                 {
                     if (Vector3.Distance(G.Now.Panels2[i].transform.position, this.transform.position) <= 100 && !G.Now.Panels2[i].GetComponent<PanelStatus>().Used)
                     {
-                        G.Now.Panels2[i].GetComponent<PanelStatus>().Used = true;
-                        this.transform.position = G.Now.Panels2[i].transform.position;
-                        Used.Add(G.Now.Panels2[i]);
-                        C.Play();
-                        foreach (var j in Blocks)
+
+                        foreach (var k in G.Now.Panels2[i].GetComponent<PanelStatus>().Zaaval)
                         {
-                            j.GetComponent<Image>().color = new Color(0, 1, 0, 50 / 255f);
+                            if (Num == k)
+                            {
+                                G.Now.Panels2[i].GetComponent<PanelStatus>().Used = true;
+                                this.transform.position = G.Now.Panels2[i].transform.position;
+                                this.transform.eulerAngles = new Vector3(0, 0, 0);
+                                Used.Add(G.Now.Panels2[i]);
+                                C.Play();
+                                foreach (var j in Blocks)
+                                {
+                                    j.GetComponent<Image>().color = new Color(0, 1, 0, 50 / 255f);
+                                }
+                                Inbag = true;
+                                G.Item.Add(Num);
+                                return;
+                            }
                         }
-                        Inbag = true;
-                        G.Item.Add(Num);
-                        return;
                     }
                 }
-                Used.Clear();
-                //  if (NPCsItem)
-                //  {
-                if (A.x < Pos2.position.x
-                    && A.x > Pos1.position.x
-                    && A.y > Pos2.position.y
-                    && A.y < Pos1.position.y)
-                {
-                    Destroy(this.gameObject);
-                    return;
-                }
-                this.transform.position = A;
-                this.transform.eulerAngles = B;
-                C.Play();
-                Inbag = true;
-                G.Item.Add(Num);
-                foreach (var k in Blocks)
-                {
-                    k.GetComponent<Image>().color = new Color(0, 1, 0, 50 / 255f);
-                }
-                foreach (var k in Back)
-                {
-                    k.GetComponent<PanelStatus>().Used = true;
-                }
-                Used.Clear();
-                Used.AddRange(Back);
-                Back.Clear();
-
+                Destroy(this.gameObject);
+                // Used.Clear();
+                // //  if (NPCsItem)
+                // //  {
+                // if (A.x < Pos2.position.x
+                //     && A.x > Pos1.position.x
+                //     && A.y > Pos2.position.y
+                //     && A.y < Pos1.position.y)
+                // {
+                //     Destroy(this.gameObject);
+                //     return;
                 // }
-                return;
+                // this.transform.position = A;
+                // this.transform.eulerAngles = B;
+                // C.Play();
+                // Inbag = true;
+                // G.Item.Add(Num);
+                // foreach (var k in Blocks)
+                // {
+                //     k.GetComponent<Image>().color = new Color(0, 1, 0, 50 / 255f);
+                // }
+                // foreach (var k in Back)
+                // {
+                //     k.GetComponent<PanelStatus>().Used = true;
+                // }
+                // Used.Clear();
+                // Used.AddRange(Back);
+                // Back.Clear();
+
+                // // }
+                // return;
             }
         }
     }
