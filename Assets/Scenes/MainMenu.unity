@@ -621,6 +621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab22c7d0845437c4aa1004f996c52a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Audio: {fileID: 0}
   Name: sound
   TargetTime: 0.5
 --- !u!82 &176543313
@@ -763,6 +764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab22c7d0845437c4aa1004f996c52a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Audio: {fileID: 0}
   Name: sound
   TargetTime: 0.5
 --- !u!82 &371727187
@@ -1024,6 +1026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab22c7d0845437c4aa1004f996c52a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Audio: {fileID: 0}
   Name: music
   TargetTime: 0.5
 --- !u!82 &519420034
@@ -1974,6 +1977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab22c7d0845437c4aa1004f996c52a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Audio: {fileID: 0}
   Name: sound
   TargetTime: 0.5
 --- !u!82 &1250047733
@@ -2419,6 +2423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab22c7d0845437c4aa1004f996c52a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Audio: {fileID: 0}
   Name: sound
   TargetTime: 0.5
 --- !u!82 &1498042470
@@ -3239,6 +3244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab22c7d0845437c4aa1004f996c52a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Audio: {fileID: 0}
   Name: sound
   TargetTime: 0.5
 --- !u!82 &1796933947
@@ -3653,7 +3659,7 @@ MonoBehaviour:
   speed: 10
   namee: 
   UseSlid: 0
-  TargetTime: 1
+  TargetTime: 0.5
   loading: {fileID: 2133127819}
 --- !u!114 &1836562721
 MonoBehaviour:
