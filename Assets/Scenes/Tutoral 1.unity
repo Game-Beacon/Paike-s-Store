@@ -27209,6 +27209,7 @@ GameObject:
   - component: {fileID: 1414671602}
   - component: {fileID: 1414671601}
   - component: {fileID: 1414671600}
+  - component: {fileID: 1414671603}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -27350,9 +27351,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1414671496}
+  - {fileID: 1414671526}
   selectedCommands:
-  - {fileID: 1414671602}
+  - {fileID: 1414671520}
   variables: []
   description: 
   stepPause: 0
@@ -28001,7 +28002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 38
   indentLevel: 0
-  storyText: "\u505A\u7684\u597D\uFF0C\u4F60\u5728\u5DE5\u4F5C\u53F0\u4E0A\u6703\u770B\u5230\u6709\u5F88\u591A\u9053\u5177\uFF0C{color=#FF615C}\u6BCF\u500B\u9053\u5177\u90FD\u6709\u76F8\u5C0D\u61C9\u7684\u5927\u5C0F{/color}\uFF0C\u7121\u6CD5\u5C07\u6240\u6709\u9053\u5177\u90FD\u653E\u9032\u5305\u5305\uFF0C\u6240\u4EE5\u9019\u6642\u5019\u5C31\u8981\u9810\u60F3\uFF0C\u4EC0\u9EBC\u662F\u5FC5\u9808\u54C1\u4EC0\u9EBC\u662F\u9644\u52A0\u54C1\u3002\r\n"
+  storyText: "\u505A\u7684\u597D\uFF0C\u4F60\u5728\u5DE5\u4F5C\u53F0\u4E0A\u6703\u770B\u5230\u6709\u5F88\u591A\u9053\u5177\uFF0C{color=#FF615C}\u6BCF\u500B\u9053\u5177\u90FD\u6709\u76F8\u5C0D\u61C9\u7684\u5927\u5C0F{/color}\uFF0C\u7121\u6CD5\u5C07\u6240\u6709\u9053\u5177\u90FD\u653E\u9032\u5305\u5305\uFF0C\u6240\u4EE5\u9019\u6642\u5019\u5C31\u8981\u9810\u60F3\uFF0C\u4EC0\u9EBC\u662F\u5FC5\u9700\u54C1\u4EC0\u9EBC\u662F\u9644\u52A0\u54C1\u3002\r\n"
   description: 
   character: {fileID: 1970691597}
   portrait: {fileID: 21300000, guid: 04d895ac585f19b4885561eb8009c830, type: 3}
@@ -28064,6 +28065,7 @@ MonoBehaviour:
   - {fileID: 1414671587}
   - {fileID: 1414671494}
   - {fileID: 1414671512}
+  - {fileID: 1414671603}
   - {fileID: 1414671602}
   - {fileID: 1414671601}
   - {fileID: 1414671493}
@@ -28439,8 +28441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 43
   indentLevel: 0
-  storyText: "\u9053\u5177\u4E0A\u9762\u90FD\u6709\u986F\u793A\u4E0D\u540C\u7684{color=#FF615C}\u7269\u54C1\u540D\u7A31\u8DDF\u7528\u9014{/color}\uFF0C\u6709\u4E9B\u7269\u54C1\u5F88\u76F8\u50CF\uFF0C\u4F46\u8981{color=#FF615C}\u4EE5\u6587\u5B57\u4F86\u5340\u5206{/color}\u5594\uFF0C\u9084\u6709\u6BCF\u500B\u7269\u54C1\u6240\u5360\u7684\u7A7A\u9593\u8207\u5F62\u72C0\u4E5F\u4E0D\u540C\uFF0C\u4F60\u6703\u770B\u5230{color=#FF615C}\u9810\u60F3\u7DDA{/color}\uFF0C\u6240\u4EE5\u4F60\u53EF\u4EE5{color=#FF615C}\u6309\u53F3\u9375\u6216shift\u65CB\u8F49\u65B9\u5411{/color}\u4F86\u8003\u616E\u600E\u9EBC\u653E\u624D\u6700\u7701\u7A7A\u9593\u7684\u3002{color=#FF615C}\u5C0D\u4E86\uFF01\u8981\u6CE8\u610F\u5BA2\u4EBA\u539F\u672C\u7684\u7269\u54C1\u4E0D\u8981\u4E1F\u51FA\u4F86\u5594
-    {/color}\u597D\u4E86\uFF0C\u4F86\u628A\u7269\u54C1\u653E\u9032\u5305\u5305\u5427\u3002"
+  storyText: "\u9053\u5177\u4E0A\u9762\u90FD\u6709\u986F\u793A\u4E0D\u540C\u7684{color=#FF615C}\u7269\u54C1\u540D\u7A31\u8DDF\u7528\u9014{/color}\uFF0C\u6709\u4E9B\u7269\u54C1\u5F88\u76F8\u50CF\uFF0C\u4F46\u8981{color=#FF615C}\u4EE5\u6587\u5B57\u4F86\u5340\u5206{/color}\u5594\uFF0C\u9084\u6709\u6BCF\u500B\u7269\u54C1\u6240\u5360\u7684\u7A7A\u9593\u8207\u5F62\u72C0\u4E5F\u4E0D\u540C."
   description: 
   character: {fileID: 1970691597}
   portrait: {fileID: 21300000, guid: 04d895ac585f19b4885561eb8009c830, type: 3}
@@ -28645,7 +28646,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 64
   indentLevel: 0
-  storyText: "{color=#FF615C}\u4E00\u5929(5\u5206\u9418)\u57FA\u672C\u4E0A\u4E00\u5929\u6703\u56FA\u5B9A\u4E8C\u5230\u4E09\u500B\u4E3B\u8981\u5BA2\u4EBA{/color}\uFF0C\u4F46\u662F\u5982\u679C\u4F60\u52D5\u4F5C\u5FEB\u4E00\u9EDE\u7684\u8A71\uFF0C\u7576\u7136\u662F\u8D8A\u591A\u5BA2\u4EBA\u8D8A\u597D\u554A\u3002\r\n"
+  storyText: "{color=#FF615C}\u57FA\u672C\u4E0A\u4E00\u5929\u6703\u56FA\u5B9A\u4E8C\u5230\u4E09\u500B\u4E3B\u8981\u5BA2\u4EBA{/color}\uFF0C\u4F46\u662F\u5982\u679C\u4F60\u52D5\u4F5C\u5FEB\u4E00\u9EDE\u7684\u8A71\uFF0C\u7576\u7136\u662F\u8D8A\u591A\u5BA2\u4EBA\u8D8A\u597D\u554A\u3002\r\u800C\u4E14{color=#FF615C}\u6BCF\u500B\u5BA2\u4EBA\u53EA\u6709\u4E94\u5206\u9418\u7684\u6642\u9593{/color},
+    \u5982\u679C\u8D85\u904E\u6642\u9593\u5BA2\u4EBA\u5C31\u6703\u96E2\u958B\n"
   description: 
   character: {fileID: 1970691597}
   portrait: {fileID: 21300000, guid: 04d895ac585f19b4885561eb8009c830, type: 3}
@@ -30388,7 +30390,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1414671600
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -30409,7 +30411,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1414671601
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -30430,7 +30432,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1414671602
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -30445,6 +30447,34 @@ MonoBehaviour:
   storyText: "\u5C0D\u4E86\uFF0C\u67D0\u4E9B\u7269\u54C1{color=#FF615C}\u53EF\u4EE5\u88DD\u5099\u5728\u5BA2\u4EBA\u7684\u8EAB\u4E0A\u7684\u88DD\u5099\u6B04\u4E0A{/color}\uFF0C
     \u800C\u4E14\u6BCF\u4F4D\u5BA2\u4EBA\u53EF\u4EE5\u88DD\u5099\u7684\u7269\u54C1\u90FD\u4E0D\u4E00\u6A23\u3002
     \u5177\u9AD4\u54EA\u4F4D\u5BA2\u4EBA\u53EF\u4EE5\u88DD\u5099\u54EA\u7A2E\u7269\u54C1\u9019\u9EDE\u4F60\u8981\u81EA\u5DF1\u6478\u7D22\u3002"
+  description: 
+  character: {fileID: 1970691597}
+  portrait: {fileID: 21300000, guid: 04d895ac585f19b4885561eb8009c830, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1414671603
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414671460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 192
+  indentLevel: 0
+  storyText: "\u4F60\u6703\u770B\u5230{color=#FF615C}\u9810\u60F3\u7DDA{/color}\uFF0C\u6240\u4EE5\u4F60\u53EF\u4EE5{color=#FF615C}\u6309\u53F3\u9375\u6216shift\u65CB\u8F49\u65B9\u5411{/color}\u4F86\u8003\u616E\u600E\u9EBC\u653E\u624D\u6700\u7701\u7A7A\u9593\u7684\u3002{color=#FF615C}\u5C0D\u4E86\uFF01\u8981\u6CE8\u610F\u5BA2\u4EBA\u539F\u672C\u7684\u7269\u54C1\u4E0D\u8981\u4E1F\u51FA\u4F86\u5594
+    {/color}\u597D\u4E86\uFF0C\u4F86\u628A\u7269\u54C1\u653E\u9032\u5305\u5305\u5427\u3002"
   description: 
   character: {fileID: 1970691597}
   portrait: {fileID: 21300000, guid: 04d895ac585f19b4885561eb8009c830, type: 3}
